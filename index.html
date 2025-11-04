@@ -1,0 +1,181 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manikanta — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; /* dark navy */
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#ffb86b;
+      --glass: rgba(255,255,255,0.03);
+      color-scheme: dark;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; background:linear-gradient(180deg,var(--bg),#071123); color:#e6eef8; line-height:1.5}
+    .container{max-width:1100px;margin:40px auto;padding:24px}header{display:flex;gap:20px;align-items:center;justify-content:space-between}
+.brand{display:flex;gap:16px;align-items:center}
+.avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#ff6b6b);display:flex;align-items:center;justify-content:center;font-weight:800;color:#071123}
+h1{margin:0;font-size:1.6rem}
+p.lead{margin:6px 0 0;color:var(--muted)}
+
+.buttons{display:flex;gap:12px}
+.btn{background:var(--accent);color:#071123;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+main{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:28px}
+
+/* left column */
+.card{background:linear-gradient(180deg,var(--card), rgba(255,255,255,0.01));padding:20px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+.about h2{margin-top:0}
+.skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.skill{background:var(--glass);padding:8px 10px;border-radius:8px;color:var(--muted);font-weight:600}
+
+.projects{display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px}
+.project{padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03)}
+.project h3{margin:0 0 6px 0}
+.project p{margin:0;color:var(--muted);font-size:0.94rem}
+
+/* right column */
+.side .contact-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+.contact-list li{display:flex;gap:10px;align-items:center}
+.meta{color:var(--muted);font-size:0.95rem}
+
+footer{margin-top:28px;text-align:center;color:var(--muted);font-size:0.9rem}
+
+/* responsive */
+@media (max-width:980px){
+  main{grid-template-columns:1fr}
+  .container{margin:18px auto;padding:16px}
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">M</div>
+        <div>
+          <h1>Gurram Manikanta</h1>
+          <p class="lead">B.Tech • Filmmaker • Content Creator — <span class="meta">Crazy Ideas Productions</span></p>
+        </div>
+      </div>
+      <div class="buttons">
+        <a class="btn" href="#contact">Hire / Contact</a>
+        <a class="btn ghost" href="#projects">Projects</a>
+      </div>
+    </header><main>
+  <section class="left">
+    <div class="card about">
+        <img src="mani avn - passphoto.jpeg" alt="Mani's Photo" width="50%" border-radius:12px;object-fit:cover" >
+      <h2>About Me</h2>
+      <p>Hi — I'm <strong>Mani</strong>. Hi, I'm Manikanta, a frontend developer and an AI & Data Science student at AVN Institute of Engineering and Technology.
+        I’m passionate about web development, always exploring new technologies to build clean, responsive, and user-friendly websites. I direct short films and create travel vlogs for my YouTube channel <em>Crazy Ideas Productions</em>.</p>
+
+      <div style="margin-top:12px">
+        <strong>Working interests</strong>
+        <div class="skills">
+          <div class="skill">Short film direction</div>
+          <div class="skill">Video editing</div>
+          <div class="skill">YouTube content</div>
+            <div class="skill">HTML & CSS</div>
+          <div class="skill">Python (learning)</div>
+        </div>
+      </div>
+
+      <div style="margin-top:18px">
+        <strong>Quick bio</strong>
+        <p class="meta" style="margin:8px 0 0">Director of short film <em>DOOR</em>. Actor friends: Shiva, Pavan, Moksh, Yashwanth. Producer: Sidhu. I shoot on weekends and plan film intros inspired by regional cinema.</p>
+      </div>
+    </div>
+
+    <div class="card" id="projects" style="margin-top:16px">
+      <h2>Selected Projects</h2>
+      <div class="projects">
+        <article class="project">
+          <h3>DOOR — Short Film (Director)</h3>
+          <p>Directed a short film about a group of five friends. I handled the direction and concept. (Script, storyboard, shoot plan available on request.)</p>
+        </article>
+
+        <article class="project">
+          <h3>Crazy Ideas Productions — YouTube Channel</h3>
+          <p>Travel vlogs and sketches featuring my friends. Managed content planning and editing.</p>
+        </article>
+
+        <article class="project">
+          <h3>Lassi Shop — Billing System (Planned)</h3>
+          <p>Owner of a small lassi shop — currently planning an in-house billing & customer management app.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h2>Skills & Tools</h2>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
+        <div class="skill">Video Editing</div>
+        <div class="skill">Scriptwriting</div>
+        <div class="skill">Basic C</div>
+        <div class="skill">Python (beginner)</div>
+        <div class="skill">HTML & CSS</div>
+        <div class="skill">Mobile filming</div>
+      </div>
+    </div>
+
+  </section>
+
+  <aside class="side">
+    <div class="card">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li><strong>Email:</strong> <span class="meta">your.email@example.com</span></li>
+        <li><strong>Phone:</strong> <span class="meta">+91 9xxxxxxxxx</span></li>
+        <li><strong>YouTube:</strong> <span class="meta">Crazy Ideas Productions</span></li>
+        <li><strong>Location:</strong> <span class="meta">Hyderabad, India</span></li>
+      </ul>
+
+      <div style="margin-top:12px">
+        <a class="btn" href="#" onclick="window.location='mailto:your.email@example.com?subject=Hi%20Mani'">Email Me</a>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <h2>Resume</h2>
+      <p class="meta">Download my resume / CV (replace the link with your real file).</p>
+      <a class="btn ghost" href="#">Download CV</a>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <h2>Social</h2>
+      <p class="meta">Replace the links with your profiles.</p>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-top:10px">
+        <a class="btn ghost" href="#">YouTube</a>
+        <a class="btn ghost" href="#">Instagram</a>
+        <a class="btn ghost" href="#">WhatsApp</a>
+      </div>
+    </div>
+
+  </aside>
+</main>
+
+<footer>
+  <p>© 2025 Manikanta | All Rights Reserved</p>
+    <p>Made with ❤️ by Manikanta</p>
+</footer>
+
+  </div>  <!--
+    HOW TO USE:
+    1) Copy this file into a new file named index.html.
+    2) Open it in your browser to preview.
+    3) Replace placeholder contact details (email/phone/social links) with your real ones.
+    4) If you want a downloadable resume, upload your file to a host and replace the href on the "Download CV" link.
+    5) Tell me any changes you want (colors, fonts, add a gallery, add project pages) and I'll update it.
+  --></body>
+</html>
