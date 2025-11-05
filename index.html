@@ -134,12 +134,17 @@ footer{margin-top:28px;text-align:center;color:var(--muted);font-size:0.9rem}
   <aside class="side">
     <div class="card">
       <h2>Contact</h2>
-      <ul class="contact-list">
-        <li><strong>Email:</strong> <span class="meta">your.email@example.com</span></li>
-        <li><strong>Phone:</strong> <span class="meta">+91 9xxxxxxxxx</span></li>
-        <li><strong>YouTube:</strong> <span class="meta">Crazy Ideas Productions</span></li>
-        <li><strong>Location:</strong> <span class="meta">Hyderabad, India</span></li>
-      </ul>
+      <form>
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" placeholder="your.email>@example.com" style="width:100%;padding:8px;margin-top:6px;border-radius:6px;border:none;background:var(--glass);color:#e6eef8" /><br /><br />
+        <label for="phone">phone:</label><br />
+        <input type="tel" id="phone" name="phone" placeholder="+91 12345 67890" style="width:100%;padding:8px;margin-top:6px;border-radius:6px;border:none;background:var(--glass);color:#e6eef8" /><br /><br />
+        <label for="YouTube">YouTube Channel:</label><br />
+        <input type="text" id="YouTube" name="YouTube" placeholder="crazy ideas productions" style="width:100%;padding:8px;margin-top:6px;border-radius:6px;border:none;background:var(--glass);color:#e6eef8" /><br /><br />
+        <label for="location">location:</label><br />
+        <input type="text" id="location" name="location" placeholder="hyderabad, India" style="width:100%;padding:8px;margin-top:6px;border-radius:6px;border:none;background:var(--glass);color:#e6eef8" /><br /><br />
+        <input type="submit" value="Submit" class="btn" style="width:
+      </form>
 
       <div style="margin-top:12px">
         <a class="btn" href="#" onclick="window.location='mailto:your.email@example.com?subject=Hi%20Mani'">Email Me</a>
